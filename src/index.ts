@@ -14,6 +14,6 @@ app.use('/users', userRoutes);
 app.use('/tasks', taskRoutes);
 app.use(requestLogger);
 
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Servidor rodando em http://localhost:${port}`);
+// });
