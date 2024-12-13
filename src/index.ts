@@ -13,7 +13,7 @@ app.use(express.json());
 app.use('/users', userRoutes);
 app.use('/tasks', taskRoutes);
 app.use(requestLogger);
-
+console.log(`Servidor rodando`);
 // app.listen(port, () => {
 //   console.log(`Servidor rodando em http://localhost:${port}`);
 // });
