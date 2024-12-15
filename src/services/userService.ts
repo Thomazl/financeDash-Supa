@@ -16,3 +16,14 @@ export const createUser = async (userData: any) => {
   if (error) throw new Error(error.message);
   return data;
 };
+
+export const LoginUser = async (userData: any) => {
+  const { data, error, status, statusText } = await supabase
+    .from("TB_USER")
+    .select("*");
+  console.log({ data, error, status, statusText }); // Logs para depuração
+  if (error) {
+    throw new Error(error.message);
+  }
+  return data;
+}
